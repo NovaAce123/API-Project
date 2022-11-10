@@ -1,2 +1,15 @@
 2022-11-10 14:08:16 - API-Project.main - INFO - gone to root
 2022-11-10 14:11:05 - API-Project.main - INFO - loaded item testing
+2022-11-10 14:39:43 - APIproject.main - INFO - gone to root
+2022-11-10 14:39:51 - APIproject.main - INFO - Requested latitude: 51.5002 and longitude: -0.120000124
+2022-11-10 14:50:02 - APIproject.main - INFO - Requested latitude: 51.5002 and longitude: -0.120000124
+2022-11-10 14:50:04 - APIproject.main - INFO - Requested latitude: 51.5002 and longitude: -0.120000124
+2022-11-10 14:50:05 - APIproject.main - INFO - Requested latitude: 51.5002 and longitude: -0.120000124
+2022-11-10 14:50:50 - APIproject.main - INFO - gone to root
+2022-11-10 14:50:54 - APIproject.main - INFO - Requested latitude: 51.5002 and longitude: -0.120000124
+2022-11-10 14:51:56 - APIproject.main - INFO - gone to root
+2022-11-10 14:52:01 - APIproject.main - INFO - Requested latitude: 51.5002 and longitude: -0.120000124
+2022-11-10 14:52:52 - APIproject.main - INFO - gone to root
+2022-11-10 14:52:58 - APIproject.main - INFO - Requested latitude: 51.5002 and longitude: -0.120000124
+2022-11-10 14:53:19 - APIproject.main - INFO - gone to root
+2022-11-10 14:53:23 - APIproject.main - INFO - Requested latitude: 51.5002 and longitude: -0.120000124

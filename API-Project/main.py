@@ -49,5 +49,3 @@ def html_output(request: Request):
         "index.html",
         {"request": request, "data": ["hello", 1, False]},
     )
-
-

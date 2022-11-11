@@ -22,10 +22,11 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 app = FastAPI()
-app.mount("../static", StaticFiles(directory="static"), name="static")
+app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 weather_api = weather()
+
 
 @app.get("/")
 async def root():
@@ -40,10 +41,10 @@ async def read_item(item_id):
 
 
 @app.get("/weather")
-async def get_weather(latitude: float = 51.5002, longitude: float = -0.120000124):
+async def get_weather(latitude: float = 51.5002, longitude: float = -0.120000124, rain: bool = False, ops:str = ""):
     log.info(f"Requested latitude: {latitude} and longitude: {longitude}")
-    output = {}
-    weather_api.get_weather(longitude=longitude, latitude=latitude)
+    output = weather_api.get_weather(longitude=longitude, latitude=latitude, rain=rain, ops=ops)
+    log.info("Data has been displayed")
     return {"weather": output}
 
 
@@ -53,5 +54,3 @@ def html_output(request: Request):
         "index.html",
         {"request": request, "data": ["hello", 1, False]},
     )
-
-
